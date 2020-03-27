@@ -27,7 +27,7 @@
         }
 
         button.addEventListener('click', async(evt) => {
-            const digestBuffer = await digestMessage(evt.target.value);
+            const digestBuffer = await digestMessage(hashInput.value);
             hashInput.value = digestBuffer;
         });
     </script>
